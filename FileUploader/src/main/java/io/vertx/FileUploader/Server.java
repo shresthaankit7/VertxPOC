@@ -1,7 +1,6 @@
 package io.vertx.FileUploader;
 
 import io.vertx.core.AbstractVerticle;
-import io.vertx.core.Vertx;
 import io.vertx.core.file.AsyncFile;
 import io.vertx.core.file.OpenOptions;
 import io.vertx.core.http.HttpServer;
@@ -17,7 +16,7 @@ import java.util.UUID;
 public class Server extends AbstractVerticle {
 
     public void start(){
-
+        System.out.println("TEST LINE !!!");
         Router router = Router.router(vertx);
 
         router.get("/fileupload").handler(routingContext ->{
