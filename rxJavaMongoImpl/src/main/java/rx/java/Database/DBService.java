@@ -23,6 +23,8 @@ public class DBService {
         JDBCClient client = JDBCClient.createShared(vertx,c);
 
         System.out.println("***********************");
+        System.out.println("Testing line in DBSERVICE in Mastering");
+
         return Observable.create(subscriber -> {
             client.getConnectionObservable().subscribe(conn -> {
 

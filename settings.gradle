@@ -1,3 +1,5 @@
 rootProject.name = 'VertxPOC'
 
 include 'FileUploader'
+include 'rxJavaMongoImpl'
+

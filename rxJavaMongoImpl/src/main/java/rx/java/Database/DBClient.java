@@ -25,6 +25,8 @@ public class DBClient {
                 .put("password","asdf123");
 
         this.jdbcClient = JDBCClient.createShared(vertx,c);
+        System.out.println("TEsT LINE DBClient IN Mastering");
+
     }
 
     public static MongoClient getMongoClient(){
