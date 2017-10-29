@@ -12,8 +12,8 @@ public class DBService {
 
 
     public Observable select(Vertx vertx, JsonObject config){
-
-        System.out.println("Branch1 !!!!");
+        System.out.println("DB Serive No COmments");
+        System.out.println("COmments clean up in DB Service master");
         JsonObject c = new JsonObject()
                 .put("driver_class","com.mysql.jdbc.Driver")
                 .put("url", "jdbc:mysql://localhost:3306/first")
@@ -21,9 +21,6 @@ public class DBService {
                 .put("password","asdf123");
 
         JDBCClient client = JDBCClient.createShared(vertx,c);
-
-        System.out.println("***********************");
-        System.out.println("Testing line in DBSERVICE in Mastering");
 
         return Observable.create(subscriber -> {
             client.getConnectionObservable().subscribe(conn -> {

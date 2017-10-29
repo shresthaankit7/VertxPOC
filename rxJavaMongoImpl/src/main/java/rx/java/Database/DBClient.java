@@ -17,7 +17,8 @@ public class DBClient {
     public static JDBCClient jdbcClient;
 
     public DBClient(Vertx vertx, JsonObject config){
-        System.out.println("COMMON FILE DB CLIENT ");
+        System.out.println("DB Serive No COmments");
+        System.out.println("COmments clean up in DBClient master");
         JsonObject c = new JsonObject()
                 .put("driver_class","com.mysql.jdbc.Driver")
                 .put("url", "jdbc:mysql://localhost:3306/first")
@@ -25,7 +26,6 @@ public class DBClient {
                 .put("password","asdf123");
 
         this.jdbcClient = JDBCClient.createShared(vertx,c);
-        System.out.println("TEsT LINE DBClient IN Mastering");
 
     }
 
