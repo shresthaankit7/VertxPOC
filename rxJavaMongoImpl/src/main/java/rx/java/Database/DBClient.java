@@ -17,7 +17,7 @@ public class DBClient {
     public static JDBCClient jdbcClient;
 
     public DBClient(Vertx vertx, JsonObject config){
-        System.out.println("DB CLIENT IN BRANCH1 ");
+        System.out.println("COMMON FILE DB CLIENT ");
         JsonObject c = new JsonObject()
                 .put("driver_class","com.mysql.jdbc.Driver")
                 .put("url", "jdbc:mysql://localhost:3306/first")
