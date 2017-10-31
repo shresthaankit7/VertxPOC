@@ -18,6 +18,7 @@ public class DBClient {
 
     public DBClient(Vertx vertx, JsonObject config{
         System.out.println("WAYNE ROONEY");
+        System.out.println("MiCHEAL CARRICK");
         JsonObject c = new JsonObject()
                 .put("driver_class","com.mysql.jdbc.Driver")
                 .put("url", "jdbc:mysql://localhost:3306/first")
